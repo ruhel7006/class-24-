@@ -1,0 +1,397 @@
+.menu-parente{
+    background-color: #e7e6e6;
+}
+.menu-fast {
+    margin-left: 300px;
+}
+
+.sobe{
+    position: relative;
+}
+.sobe::after {
+    content: "";
+    top: 52px;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: blue;
+    margin-left: 15px;
+
+    transition: 0.5s;
+}
+.bot{
+position: relative;
+}
+.bot::before {
+	content: "";
+	position: absolute;
+	bottom: -32px;
+	left: 7px;
+	width: 70px;
+	height: 1px;
+	background-color: blue;
+}
+.sobe:hover::after{
+    width: 80%;
+}
+.menu-fast li{
+    position: relative;
+}
+.menu-fast li a{
+    color: #111;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 17px;
+    
+}
+
+.menu-fast li ul {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 200px;
+    padding: 0;
+    text-decoration: none;
+    background: white;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.menu-fast li ul li{}
+.menu-fast li ul li a {
+    color: white;
+    background: blue;
+    padding: 15px 43px;
+    display: inline-block;
+}
+.menu-fast li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.tuber{
+    width: 100px;
+}
+.btn-div{
+    margin-left: 60px;
+}
+
+/* buttone menu star */
+.button-menu{
+    margin-left: 121px;
+}
+.menu-butone{
+    color: blue;
+    background: white !important;
+    border: white;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 36px;
+
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.menu-butone::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: blue;
+    color: white;
+    border: blue;
+    border-radius: 36px;
+
+    transition: 0.5s;
+    z-index: -1;
+}
+.menu-butone:hover::after{
+    width: 100%;
+    border-radius: 36px;
+}
+
+
+
+/* banner content start */
+.baner-parent {
+background-color: #edf6ff;
+}
+.baner-riting {
+    width: 807px;
+}
+.baner-riting h1 {
+    margin: 160px 0px 0 120px;
+    width: 560px;
+}
+.baner-riting p {
+    margin: 21px 0px 0 120px;
+    width: 631px;
+    color: #767676;
+}
+
+.butone {
+    margin-left: 120px;
+    padding: 15px 0;
+}
+
+.butome {
+    background: blue;
+    color: white;
+    transition: 0.4s;
+}
+.butome:hover{
+    background-color: white;
+    color: blue;
+}
+
+.banner-img {
+    width: 540px;
+    margin-top: -45px;
+    overflow: hidden;
+}
+.banner-imge {
+    width: 700px;
+    border-radius: 50%;
+    height: 650px;
+    margin-top: -20px;
+}
+
+/* banner content end */
+
+
+/* service-container star */
+.service-fast{
+    padding-bottom: 70px;
+    position: relative;
+}
+.img-fast {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.service-one {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.service-one h6{
+    color: #5252f0;
+}
+
+.service-one p {
+    width: 600px;
+}
+.service-one h1 {
+    width: 645px;
+    position: relative;
+}
+.service-one h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #5252f0;
+}
+.service-two {
+    margin-left: 20px;
+}
+
+
+.service-vi{
+    width: 280px;
+    height: 260px;
+    background: #f9fcff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px -1px rgba(41, 51, 115, 0.2);
+    margin-left: 20px;
+    transition: 0.4s;
+    margin-left: 40px;
+}
+.service-vi:hover{
+    transform: translateY(-5px);
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
+.service-vi:hover .tyu{
+    color: rgb(233, 233, 233);
+}
+
+.service-vi h3 {
+    font-size: 24px;
+    margin-left: 20px;
+    padding-top: 15px;
+    font-weight: 400;
+}
+.service-vi .service-icone {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: blue;
+    color: white;
+    border-radius: 53px 50px 50px 0;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+.service-vi .service-icone::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #5252f0;
+    transition: 0.5s;
+
+}
+.service-vi:hover .service-icone{
+    background-color: white;
+    color: blue;
+    
+}
+.service-vi:hover .service-icone::after{
+    width: 50px;
+    background-color: white;
+}
+.service-vi p {
+    margin-left: 20px;
+    color: #b1aaaa;
+    width: 240px;
+}
+
+/* service-container end  */
+
+/* fotter-play list star */
+.fotter-fast{
+    background-image:url(https://swall.teahub.io/photos/small/45-455806_nature-reflection-art.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:500px;
+    position: relative;
+    z-index: 1;
+}
+.fotter-fast::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.468);
+    z-index: -1;
+}
+
+
+.fotter-riting {
+	width: 606px;
+	margin: auto;
+	padding-top: 60px;
+    color: rgb(255, 255, 255);
+   
+    
+}
+.fotter-riting h5{}
+.fotter-riting h2 {
+	font-size: 50px;
+	margin-top: 18px;
+    position: relative;
+}
+.fotter-riting h2::before {
+	content: "";
+	position: absolute;
+	left: 230px;
+	bottom: 0;
+	width: 150px;
+	height: 3px;
+	background-color: white;
+}
+.fotter-riting h6{
+    font-size: 19px;
+}
+
+
+.fotter-play{
+	font-size: 45px;
+	background: #ffffff;
+	width: 60px;
+	height: 60px;
+	margin: auto;
+	line-height: 57px;
+	border-radius: 50%;
+	color:rgb(37, 4, 202);
+    position: relative;
+    text-align: center;
+   
+    
+    
+}
+.fotter-play::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: fotter-play ease-out  infinite;
+    animation-duration: 2s;
+   
+
+}
+.fotter-play::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: fotter-play ease-out  infinite;
+    animation-duration: 2s;
+   
+
+}
+@keyframes fotter-play{
+    0%{
+        transform: scale(1);
+        opacity: 4;
+    }
+    25%{
+        transform: scale(1.5);
+        opacity:8;
+    }
+    50%{
+        transform: scale(2);
+        opacity: 15;
+    }
+    100%{
+        transform: scale(2.3);
+        opacity: 0;
+    }
+}
+/* fotter-play list end */
